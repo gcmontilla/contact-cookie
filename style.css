@@ -1,0 +1,132 @@
+* {
+    /* Factors margin and padding into width*/
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+    background: url("oreo_cookies-wallpaper-2560x1600.jpg");
+    color: #000;
+    line-height: 1.6;
+    font-family: Tahoma, Tahoma, Verdana, sans-serif;
+    padding: 1em;
+}
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+label {
+    text-align: center;
+}
+
+.brand {
+    text-align: center;
+
+}
+
+.contact {
+    box-shadow: 0 0 20px 0 rgba(72,94,116, 0.7);
+}
+
+.wrapper * {
+    padding: 1em;
+}
+
+.company{
+    display: grid;
+    background: none;
+    color: white;
+}
+
+.company .info h3 {
+    font-size: 3em;
+}
+
+.company .info h3, .company .info ul,  .company .info li {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact {
+    background: white;
+    border-radius: 25px;
+}
+
+/* Form Styles */
+.contact form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.contact span {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1/4;
+}
+
+.contact form p, .contact h3 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.contact form  {
+    text-align: center;
+}
+
+.contact form button, .contact form input, .contact form textarea {
+    width: 100%;
+    padding: 1em;
+}
+
+.contact form button {
+    background: skyblue;
+    border-radius: 10px;
+}
+
+button {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+button:hover {
+    opacity: .5;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 1.3em;
+}
+
+/* Media Query */
+@media(max-width: 600px) {
+    .contact form {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .contact form input, .contact form textarea {
+        margin: 5px;
+    }
+}
